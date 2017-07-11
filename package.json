@@ -1,0 +1,16 @@
+{
+  "name": "password-generator",
+  "version": "1",
+  "description": "dave ceddia tutorial",
+  "main": "index.js",
+  "repository": "n/a",
+  "author": "alex",
+  "license": "n/a",
+  "dependencies": {
+    "express": "^4.15.3",
+    "password-generator": "^2.1.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
