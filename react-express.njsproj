@@ -17,9 +17,6 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Content Include="package.json" />
-    <Compile Include="client\src\TitleComponent.js">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="index.js" />
     <Content Include="client\package.json" />
     <Content Include="client\README.md" />
@@ -29,7 +26,7 @@
     <Content Include="client\src\App.css" />
     <Content Include="client\src\index.css" />
     <Content Include="client\src\logo.svg" />
-    <Compile Include="client\src\App.js" />
+    <Compile Include="client\src\App.jsx" />
     <Compile Include="client\src\App.test.js" />
     <Compile Include="client\src\index.js" />
     <Compile Include="client\src\registerServiceWorker.js" />
