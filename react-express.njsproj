@@ -17,6 +17,28 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Content Include="client\src\data.json" />
+    <Content Include="client\public\img\1.jpg" />
+    <Content Include="client\public\img\2.jpg" />
+    <Content Include="client\public\img\3.jpg" />
+    <Content Include="client\public\img\4.jpg" />
+    <Content Include="client\public\img\5.jpg" />
+    <Content Include="client\public\img\loading.png" />
+    <Content Include="client\public\img\posters\.DS_Store" />
+    <Content Include="client\public\img\posters\a.jpg" />
+    <Content Include="client\public\img\posters\b.jpg" />
+    <Content Include="client\public\img\posters\bb.jpg" />
+    <Content Include="client\public\img\posters\bm.jpg" />
+    <Content Include="client\public\img\posters\got.jpg" />
+    <Content Include="client\public\img\posters\h.jpg" />
+    <Content Include="client\public\img\posters\hoc.jpg" />
+    <Content Include="client\public\img\posters\mon.jpg" />
+    <Content Include="client\public\img\posters\n.jpg" />
+    <Content Include="client\public\img\posters\oitnb.jpg" />
+    <Content Include="client\public\img\posters\st.jpg" />
+    <Content Include="client\public\img\posters\sv.jpg" />
+    <Content Include="client\public\img\posters\ta.jpg" />
+    <Content Include="client\public\img\posters\v.jpg" />
+    <Content Include="client\public\img\posters\ww.jpg" />
     <Content Include="client\src\Landing.jsx" />
     <Content Include="client\src\Search.jsx">
       <SubType>Code</SubType>
@@ -40,6 +62,8 @@
     <Folder Include="client" />
     <Folder Include="client\public" />
     <Folder Include="client\src" />
+    <Folder Include="client\public\img\" />
+    <Folder Include="client\public\img\posters\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
