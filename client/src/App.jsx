@@ -1,14 +1,16 @@
 import React from 'react';
-import "./App.css";
+import { render } from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Landing from './Landing';
+import Search from './Search';
 
 const App = () => (
+  <BrowserRouter>
     <div className="app">
-        <div className="landing">
-            <h1>svideo</h1>
-            <input type="text" placeholder="Search" />
-            <a>or Browse All</a>
-        </div>
+      <Route exact path="/" component={Landing} />
+      <Route path="/search" component={Search} />
     </div>
+  </BrowserRouter>
 );
 
 export default App;
