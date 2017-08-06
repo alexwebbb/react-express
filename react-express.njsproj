@@ -43,6 +43,9 @@
     <Content Include="client\src\Search.jsx">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="client\src\ShowCard.jsx">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Compile Include="index.js" />
     <Content Include="client\package.json" />
