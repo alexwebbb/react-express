@@ -3,18 +3,13 @@ import ShowCard from './ShowCard'
 import preload from './data.json'
 
 class Search extends React.Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {
-            searchTerm: 'this is a debug statement'
-        };
-
-        this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
+    state = {
+        searchTerm: ''
     }
 
-    handleSearchTermChange(event) {
-        this.setState({ searchTerm: event.target.value })
+    handleSearchTermChange = (event) => {
+        this.setState({ searchTerm: event.target.value });
     }
 
     render() {
@@ -30,11 +25,12 @@ class Search extends React.Component {
                     />
                 </header>
                 <div>
-                    {preload.shows.map((show) => {
-                        return (
-                            <ShowCard {...show} key={show.imdbID} />
+                    {preload.shows
+                        .filter(
+                        show =>
+                            `${show.title} ${show.description}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0
                         )
-                    })}
+                        .map((show, index) => <ShowCard {...show} key={show.imdbID} id={index} />)}
                 </div>
             </div>
         )
