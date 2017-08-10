@@ -21,6 +21,7 @@ const ShowCard = props => (
     <Wrapper>
         <Image alt={`${props.title} Show Poster`} src={`./img/posters/${props.poster}`} />
         <div>
+
             <h3>{props.title}</h3>
             <h4>({props.year})</h4>
             <p>{props.description}</p>
